@@ -14,11 +14,19 @@ AI Permanent Actueel — maandelijkse AI-updates en een kwartaaltoets voor medew
 
 Elke pagina is volledig zelfstandig: stijlen, scripts en het DFO-logo zitten erin.
 
+## Onderhoud
+
+De pagina's zijn gegenereerd. Pas `index.html` niet met de hand aan, maar de scripts in `tools/` en bouw opnieuw met `bash tools/bouw.sh`. Zie `tools/README.md`.
+
 ## Pagina's
 
 - `/` — homepage met klantcommunicatie, pakket-check, kantoorscan, dossier, FAQ, tip je collega's en nieuwsbrieven
 - `/kennistoets/` — kennistoets met certificaat en confetti bij een voldoende (≥ 70%); `?mods=1,2&start=1` start direct met die modules
 - `/en/knowledge-test/` — Engelse versie van de kennistoets
+- `/nieuw/`, `/begrippen/`, `/wetgeving/`, `/over/`, `/privacy/` — updates en tijdlijn, begrippenlijst, bronnen, verantwoording, privacy
+- `/register/` — register AI-geletterdheid per medewerker (CSV of print, niets wordt opgeslagen)
+- `/artikel-4-ai-geletterdheid/`, `/ai-in-de-privacyverklaring/`, `/ai-chatbot-melden-aan-klant/`, `/ai-voor-volmachtbedrijven/`, `/ai-kredietadvies-geautomatiseerde-beoordeling/` — onderwerppagina's
+- `404.html` — pagina niet gevonden
 
 ## Wat werkt er op GitHub Pages
 

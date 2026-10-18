@@ -6,7 +6,6 @@ Gratis, zonder account. Het certificaat is een deelnamebewijs, geen diploma en g
 
 - Website: https://ai-permanent-actueel.nl/
 - Kennistoets: https://ai-permanent-actueel.nl/kennistoets/ (Engels: https://ai-permanent-actueel.nl/en/knowledge-test/)
-- Privacy, voorwaarden en klachten: https://ai-permanent-actueel.nl/privacy/
 - Uitgever: DFO BV, De Wel 14-16, 3871 MV Hoevelaken, 033 258 04 60, info@dfobv.nl
 - Stand: oktober 2026
 
@@ -20,6 +19,20 @@ Gratis, zonder account. Het certificaat is een deelnamebewijs, geen diploma en g
 6. **Veilig gebruik en beleid**: AI-policy, toegestane tools, shadow AI en vastlegging.
 7. **Rechtspraak en aansprakelijkheid**: Wat rechters doen met ongecontroleerde AI-output, en wie de rekening krijgt.
 
+## Pagina's
+
+- [Privacy, voorwaarden en klachten](https://ai-permanent-actueel.nl/privacy/): Hoe AI Permanent Actueel met je gegevens omgaat, de gebruiksvoorwaarden van de oefentoets en hoe je een klacht indient. Een activiteit van DFO BV.
+- [Wat is er nieuw in AI-regelgeving voor financieel dienstverleners](https://ai-permanent-actueel.nl/nieuw/): Tijdlijn en updates over de AI-verordening, AVG en rechtspraak voor hypotheek-, assurantie- en kredietadviseurs en volmachtbedrijven.
+- [Begrippenlijst AI voor financieel dienstverleners](https://ai-permanent-actueel.nl/begrippen/): Wat is een hallucinatie, gebruiksverantwoordelijke, DPIA of shadow AI? Begrippen uit de AI-verordening en AVG uitgelegd voor adviseurs en volmachtbedrijven.
+- [Wet- en regelgeving AI voor financieel dienstverleners](https://ai-permanent-actueel.nl/wetgeving/): Links naar de AI-verordening, AVG, Wft, de Consumentenkredietrichtlijn en de toezichthouders, met de artikelen die voor adviseurs en volmachtbedrijven relevant zijn.
+- [Over en verantwoording](https://ai-permanent-actueel.nl/over/): Wie achter AI Permanent Actueel zit, voor wie het is, hoe de inhoud tot stand kwam en wat de grenzen zijn. Een activiteit van DFO BV.
+- [Register AI-geletterdheid per medewerker](https://ai-permanent-actueel.nl/register/): Hulpmiddel om per medewerker vast te leggen dat de AI-geletterdheid is bijgehouden: modules, toetsdatum, score en certificaatnummer. Er wordt niets opgeslagen.
+- [Artikel 4 AI-verordening: AI-geletterdheid voor financieel dienstverleners](https://ai-permanent-actueel.nl/artikel-4-ai-geletterdheid/): Wat artikel 4 van de AI-verordening vraagt, voor wie het geldt en hoe een advieskantoor of volmachtbedrijf de AI-geletterdheid van medewerkers aantoonbaar maakt.
+- [AI in je privacyverklaring: wat vermeld je als adviseur?](https://ai-permanent-actueel.nl/ai-in-de-privacyverklaring/): Wat een hypotheek-, assurantie- of kredietadviseur in de privacyverklaring moet melden als AI-tools klantgegevens verwerken, met modelteksten en de bijbehorende AVG-artikelen.
+- [AI-chatbot melden aan de klant: wat vraagt artikel 50?](https://ai-permanent-actueel.nl/ai-chatbot-melden-aan-klant/): Moet een advieskantoor klanten vertellen dat een chatbot of AI-mailassistent AI is? Wat artikel 50 van de AI-verordening vraagt, met een modeltekst.
+- [AI voor volmachtbedrijven: geautomatiseerde besluiten en afspraken](https://ai-permanent-actueel.nl/ai-voor-volmachtbedrijven/): Wat een volmachtbedrijf moet regelen als AI wordt ingezet bij acceptatie, premie en schade: AVG artikel 22, afspraken met de volmachtgever en klantcommunicatie.
+- [AI bij kredietadvies: geautomatiseerde beoordeling en de nieuwe richtlijn](https://ai-permanent-actueel.nl/ai-kredietadvies-geautomatiseerde-beoordeling/): Wat kredietadviseurs moeten weten over AI en geautomatiseerde kredietwaardigheidsbeoordeling: AVG artikel 22, hoog-risico-AI en de herziene Consumentenkredietrichtlijn per 20 november 2026.
+
 ## Klantcommunicatie bij AI-gebruik
 
 Bron: https://ai-permanent-actueel.nl/#klantcommunicatie. Geldt voor hypotheek-, assurantie- en kredietadvies en volmachtbedrijven.
@@ -28,7 +41,7 @@ Bron: https://ai-permanent-actueel.nl/#klantcommunicatie. Geldt voor hypotheek-,
 
 - **Privacyverklaring**: Meld dat je AI-tools gebruikt en welke klantgegevens erin gaan. Noem de categorie verwerker (bijv. 'AI-dienstverlener voor transcriptie en tekstverwerking'), doorgifte buiten de EER met de waarborg (EU-VS-dataprivacykader of modelcontractbepalingen), de bewaartermijn bij de leverancier en of gegevens voor training worden gebruikt. Grondslag: AVG art. 13 en 14.
 - **Melding bij opnemen of transcriberen van gesprekken**: Meld aan het begin van het gesprek dat het wordt opgenomen of door AI wordt uitgeschreven, waarvoor en hoe lang het wordt bewaard. Leg de melding of toestemming vast in het dossier. Grondslag: AVG art. 5, 6 en 13.
-- **Melding bij chatbot of AI-gegenereerde content**: Klanten moeten weten dat ze met een AI-systeem communiceren, uiterlijk bij het eerste contact (chatbot op de site, AI-mailassistent, voicebot). AI-gegenereerde teksten die je publiceert om het publiek te informeren over zaken van algemeen belang, label je als AI-gegenereerd, tenzij een mens ze redactioneel heeft gecontroleerd. Grondslag: AI-verordening art. 50, sinds 2 augustus 2026.
+- **Melding bij chatbot of AI-gegenereerde content**: Klanten moeten weten dat ze met een AI-systeem communiceren, uiterlijk bij het eerste contact (chatbot op de site, AI-mailassistent, voicebot). De plicht ligt formeel bij de aanbieder van de chatbot (art. 50 lid 1): bouw je hem zelf of bied je hem onder eigen naam aan, dan ben jij dat. Meld het in elk geval altijd. AI-gegenereerde teksten die je publiceert om het publiek te informeren over zaken van algemeen belang, label je als AI-gegenereerd, tenzij een mens ze redactioneel heeft gecontroleerd. Grondslag: AI-verordening art. 50, sinds 2 augustus 2026.
 - **Informatie bij geautomatiseerde besluiten**: Alleen als een systeem zonder menselijke beoordeling een besluit neemt met rechtsgevolg of aanmerkelijk effect, zoals automatische acceptatie, afwijzing of premievaststelling. Dan: vooraf melden, de onderliggende logica uitleggen en recht geven op menselijke tussenkomst en bezwaar. Grondslag: AVG art. 22.
 
 ### 2 · Aanbevolen in je klantdocumenten
@@ -72,6 +85,7 @@ Bron: https://ai-permanent-actueel.nl/#klantcommunicatie. Geldt voor hypotheek-,
 - **Leven en zorg: hoog-risico-AI** (Assurantieadvies): AI voor risicobeoordeling en premiebepaling bij levens- en ziektekostenverzekeringen van particulieren is hoog-risico (bijlage III, punt 5c). Dat raakt vooral de verzekeraar. Gebruik je zelf zo'n tool richting de klant, vraag de leverancier dan naar de conformiteit. De ingangsdatum is mogelijk uitgesteld: controleer de actuele stand. Grondslag: AI-verordening bijlage III.
 - **Nieuwe Consumentenkredietrichtlijn** (Kredietadvies): De herziene richtlijn (EU) 2023/2225 geldt vanaf 20 november 2026. Bij een geautomatiseerde kredietwaardigheidsbeoordeling krijgt de consument recht op menselijke tussenkomst, een uitleg en het geven van zijn standpunt. Controleer de stand van de Nederlandse implementatie. Daarnaast is AI voor kredietwaardigheid hoog-risico (bijlage III, punt 5b). Grondslag: Richtlijn (EU) 2023/2225 · AI-verordening.
 - **Besluiten namens de verzekeraar** (Volmachtbedrijf): Automatische acceptatie, premie of schadeafwijzing valt snel onder AVG art. 22. Bij leven- en ziektekostenverzekeringen kan ook hoog-risico-AI aan de orde zijn (bijlage III, punt 5c). Leg in de volmachtovereenkomst vast wat mag en wie verantwoordelijk is. Grondslag: AVG art. 22 · AI-verordening.
+- **Controleer de actuele stand van de AI-verordening**: Het Digital Omnibus-voorstel kan termijnen (onder meer voor hoog-risico-AI) en onderdelen van de verordening wijzigen, mogelijk ook de invulling van artikel 4. Dit overzicht geeft de stand van oktober 2026 voor zover bekend. Zie Wat is er nieuw. Grondslag: AI-verordening · Digital Omnibus.
 - **Modelteksten zijn voorbeelden**: Pas de teksten aan op je eigen tools en processen en laat ze toetsen door compliance of een jurist. Dit overzicht is geen juridisch advies.
 
 ## Dossier voor de werkgever (artikel 4)
@@ -117,7 +131,7 @@ Verplicht: de privacyverklaring (AVG art. 13 en 14), een melding vooraf bij het 
 
 ### Moet ik klanten vertellen dat onze chatbot AI is?
 
-Ja. Sinds 2 augustus 2026 moeten mensen op grond van artikel 50 van de AI-verordening weten dat ze met een AI-systeem communiceren, uiterlijk bij het eerste contact.
+Ja. Op grond van artikel 50 van de AI-verordening (van toepassing sinds 2 augustus 2026; controleer de actuele stand) moeten mensen weten dat ze met een AI-systeem communiceren, uiterlijk bij het eerste contact. Formeel ligt die plicht bij de aanbieder van de chatbot; bouw of lever je hem onder eigen naam, dan ben jij dat zelf.
 
 ### Wat moet een volmachtbedrijf extra regelen bij AI?
 
