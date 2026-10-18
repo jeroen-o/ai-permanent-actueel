@@ -1,19 +1,19 @@
 # ---------- ronde 3: vragenbank, scroll-offset, header, privacy, geen Google Fonts ----------
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import vragen_extra as VX
+import vragen as VX
 
 def vjs(v):
     return '  V(' + json.dumps(list(v), ensure_ascii=False)[1:-1] + ')'
 
 # 1. vragenbank: 10 per module, toets kiest er willekeurig 2 per module
 a = t.index('const VRAGEN = ['); b = t.index('\n];', a)
-t = t[:b] + ',\n' + ',\n'.join(vjs(v) for v in VX.NL) + t[b:]
+t = t[:a] + 'const VRAGEN = [\n' + ',\n'.join(vjs(v) for v in VX.NL) + t[b:]
 t = sub1("const reeks = VRAGEN.filter(v=>mods.includes(v.m)).sort((a,b)=>a.m-b.m).map(v=>({...v,o:shuffle(v.o)}));",
          "const reeks = [...mods].sort((a,b)=>a-b).flatMap(m=>shuffle(VRAGEN.filter(v=>v.m===m)).slice(0,2)).map(v=>({...v,o:shuffle(v.o)}));", t)
 t = sub1("const aantal=VRAGEN.filter(v=>s.mods.includes(v.m)).length;",
          "const aantal=s.mods.reduce((n,m)=>n+Math.min(2,VRAGEN.filter(v=>v.m===m).length),0);", t)
 t = sub1('line-height:1.55">Twee vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>',
-         'line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van tien per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>', t)
+         'line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van twintig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>', t)
 
 # 2. scroll-offset op basis van de werkelijke headerhoogte
 t = sub1("html{scroll-behavior:smooth}", "html{scroll-behavior:smooth}\n[id]{scroll-margin-top:calc(var(--kop,0px) + 16px)}", t)

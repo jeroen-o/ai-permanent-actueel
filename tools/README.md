@@ -18,13 +18,12 @@ Tussenbestanden komen in `tools/.werk/` (niet in git).
 | Wat | Waar |
 |---|---|
 | Klantcommunicatie (verplicht, aanbevolen, intern, modelteksten, aandachtspunten) | `kc_data.py` |
-| Extra toetsvragen (NL en EN, 8 per module) | `vragen_extra.py` |
-| De eerste 14 toetsvragen | `basis/index.html` (NL, `const VRAGEN`) en `en.py` (EN) |
+| Toetsvragen (NL en EN, 20 per module) | `vragen_nl.py`, `vragen_en.py` (via `vragen.py`) |
 | Gratis-blok, tip je collega's, nieuwsbrieven, footer, Let op-tekst | `extras.py` |
 | HOERA-banner en confetti | `feest.py` |
 | Zoeken, scroll-offset, header | `ronde3.py` |
 | Bronlinks in de toetsuitleg, doorzoekbare pagina's en begrippen | `ronde4.py` |
-| Kennistoets-pagina en Engelse versie | `variants.py`, `en.py` |
+| Kennistoets-pagina en Engelse versie | `variants.py` |
 | Updates, begrippen, wetgeving, over, register, onderwerppagina's, 404, privacy | `paginas.py` (privacytekst in `basis/privacy_body.html`) |
 | SEO-head, statische tekst voor crawlers, robots.txt, sitemap.xml, llms.txt | `finalize.py` |
 | Favicons | `fav.js` (bron: `favicon.svg`) |
@@ -35,6 +34,7 @@ Tussenbestanden komen in `tools/.werk/` (niet in git).
 
 ```bash
 python3 tools/tests/links.py                        # alle interne links en ankers
+python3 tools/tests/vragen_kwaliteit.py             # vragenbank: aantallen en geen lengte-cue
 python3 -m http.server 8765 &                       # vanuit de repo-root
 cd tools/tests && node e2e.js && node mob.js && node scroll.js && node paginas.js
 node err.js kennistoets/index.html                  # console-fouten per pagina

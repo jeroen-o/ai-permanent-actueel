@@ -87,51 +87,7 @@ MODULES_EN = [
   (6, "Safe use and policy", "AI policy, approved tools, shadow AI and record keeping."),
   (7, "Case law and liability", "What courts do with unchecked AI output, and who pays the bill."),
 ]
-VRAGEN_EN = [
-  (1, "What does a large language model essentially do when you ask it a question?", "It predicts the most likely continuation of the text, based on patterns in its training data.",
-   ["It looks up the answer in a verified database.", "It reasons according to fixed legal decision rules.", "It has the answer checked by the supervisory authority beforehand."],
-   "That is why output sounds fluent and convincing, even when it is factually wrong."),
-  (1, "What is meant by a hallucination?", "A fluently worded answer that is factually incorrect or made up.",
-   ["The model refuses to answer.", "A glitch that makes text appear twice.", "A delay caused by too many simultaneous users."],
-   "Made-up references, amounts or statutory provisions are the classic example."),
-  (2, "Since when has the AI literacy obligation applied?", "2 February 2025.",
-   ["1 August 2024.", "2 August 2026.", "2 December 2027."],
-   "The AI Act entered into force on 1 August 2024; the AI literacy obligation has applied since 2 February 2025."),
-  (2, "The firm uses a chatbot for client questions. What does the transparency obligation require?", "That the client knows they are interacting with an AI system, unless that is obvious.",
-   ["Nothing, as long as the answers are correct.", "That the chatbot holds a Wft diploma (Dutch financial advice qualification).", "That the client gives prior written consent."],
-   "Article 50 requires that interaction with AI is recognisable. The duty of care remains with the firm."),
-  (3, "An employee wants to paste a client's payslip into a public chatbot. What is correct?", "Not without an approved tool and agreements: it is processing of personal data outside your own environment.",
-   ["That's fine, it is only one document.", "That's fine if the client agreed verbally.", "That's fine if you delete the answer afterwards."],
-   "Without a data processing agreement and arrangements on retention and reuse, there is no basis."),
-  (3, "An AI tool accidentally returns information about another client. What do you do?", "Report it through the internal reporting point or to the DPO; it may be a data breach.",
-   ["Nothing, it was a coincidence.", "Call the client yourself and explain.", "Delete the conversation and carry on."],
-   "Assessing the duty to notify is up to the organisation, not the individual employee."),
-  (4, "Who is responsible for an error in an advice report drafted with AI?", "The adviser and the firm issuing the advice.",
-   ["The AI tool vendor.", "Nobody, AI errors are force majeure.", "The client, who signed the report."],
-   "AI is a tool; human oversight and final responsibility remain with the professional."),
-  (4, "A model gives three source references. What is the right approach?", "Open each source yourself and check that it supports the claim.",
-   ["Copy them; a reference means it is correct.", "Check only the first source.", "Leave the sources out of the report."],
-   "References can be made up or say something different from what the model claims."),
-  (5, "May an AI summary of a client meeting go into the client file?", "Yes, provided an employee checks and corrects it and the method is set out in policy.",
-   ["No, AI output may never go into a client file.", "Yes, unchecked, it saves time.", "Only if the client said it word for word."],
-   "The file must give an accurate picture; whoever finalises it remains responsible."),
-  (5, "An AI-generated text promises ‘guaranteed lowest monthly payments’. What do you do?", "Remove or substantiate the promise; such a claim is easily misleading.",
-   ["Publish it, the tool phrased it that way.", "Put the sentence in small print.", "Add a disclaimer underneath."],
-   "Information to clients must be correct, clear and not misleading (Dutch Financial Supervision Act, Wft)."),
-  (6, "What is shadow AI?", "AI tools employees use outside the approved set, without the organisation's oversight.",
-   ["AI that runs at night.", "An AI model that hides itself.", "A secured copy of an AI system."],
-   "No agreements, no oversight, no records: one of the biggest practical risks."),
-  (6, "How do you make your AI literacy efforts demonstrable?", "With a fixed rhythm of instruction and testing, recording participation, date and content.",
-   ["Send one email saying AI exists.", "Keep the director's certificate.", "File the data processing agreement."],
-   "Documenting approach and progress is how you demonstrate the effort."),
-  (7, "A party cites case law that an AI tool made up. What happens?", "The court does not accept it; it can lead to an order to pay costs.",
-   ["The court looks up the correct rulings itself.", "It is a procedural error that is easily fixed.", "The AI vendor is held liable."],
-   "Dutch courts have repeatedly penalised unchecked AI output."),
-  (7, "What is the lesson from those rulings for an advisory practice?", "Whoever uses AI remains responsible for accuracy and verifiability.",
-   ["AI may not be used in client files.", "A disclaimer under the document solves it.", "Only lawyers run this risk."],
-   "The same applies to calculations, advice reports and complaint files."),
-]
-assert len(VRAGEN_EN) == 14
+
 
 EN_LD = json.dumps({"@context": "https://schema.org", "@graph": ORG_G + [
     {"@type": "WebPage", "@id": EN_URL + "#webpage", "url": EN_URL, "name": EN_TITLE, "description": EN_DESC,
@@ -164,8 +120,8 @@ def to_en(x):
     # toetssectie
     r('>Kwartaaltoets · AI Permanent Actueel<', '>Quarterly test · AI Permanent Actueel<')
     r('>Kennistoets AI-geletterdheid</h1>', '>AI Literacy Knowledge Test</h1>')
-    r('line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van tien per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
-      'line-height:1.55">Two questions per selected module, randomly drawn each time from a bank of ten per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
+    r('line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van twintig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
+      'line-height:1.55">Two questions per selected module, randomly drawn each time from a bank of twenty per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
     r('Oefentoets — geen erkend examen en geen bewijs van naleving.', 'Practice test — not a recognised exam and no proof of compliance.')
     r('\n      <p style="margin:0;font-size:14px"><a href="../../#pakket">Welke modules horen bij mijn rol?</a></p>', '')
     r('>Kies de modules voor deze toets<', '>Choose the modules for this test<')
@@ -186,7 +142,7 @@ def to_en(x):
     a = x.index('const MODULES = ['); b = x.index('];', a) + 2
     x = x[:a] + 'const MODULES = ' + json.dumps([{"id": i, "naam": n, "omschr": o} for i, n, o in MODULES_EN], ensure_ascii=False) + ';' + x[b:]
     a = x.index('const VRAGEN = ['); b = x.index('\n];', a) + 3
-    x = x[:a] + 'const VRAGEN = [\n' + ',\n'.join('  V(' + json.dumps(list(v), ensure_ascii=False)[1:-1] + ')' for v in VRAGEN_EN + VX.EN) + '\n];' + x[b:]
+    x = x[:a] + 'const VRAGEN = [\n' + ',\n'.join('  V(' + json.dumps(list(v), ensure_ascii=False)[1:-1] + ')' for v in VX.EN) + '\n];' + x[b:]
     r("alert('Vul een naam in voor op het certificaat.')", "alert('Please enter a name for the certificate.')")
     r("alert('Sta pop-ups toe om het certificaat te openen.')", "alert('Please allow pop-ups to open the certificate.')")
     r("datum=d.toLocaleDateString('nl-NL'", "datum=d.toLocaleDateString('en-GB'")
