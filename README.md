@@ -17,8 +17,6 @@ AI Permanent Actueel — maandelijkse AI-updates en een kwartaaltoets voor medew
 ## Wat werkt er op GitHub Pages
 
 - Werkt: modules, pakket-check, kennistoets + certificaat, prompt-check, kantoorscan, dossier-checklist, veelgestelde vragen, tabblad *Klantcommunicatie* (per beroepsgroep), zoekfunctie (ook via `?q=zoekterm`) en Home-knop.
-- Werkt niet zonder koppeling: de **AI-assistent** (en de knop "Leg verder uit met AI"). Die gebruikt nu de ingebouwde AI van de ontwerpomgeving. Voor livegang is een eigen backend nodig (bijv. een serverless functie die de Claude API aanroept met een API-sleutel die niet in de browser staat).
-
 ## Nog in te vullen
 
 - Echte aanmeldlinks voor DFO Signalen en Nieuwsbrief Wft (nu `dfobv.nl`).
