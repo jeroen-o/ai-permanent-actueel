@@ -14,6 +14,6 @@ for (const [pad,naam] of [['kennistoets/','NL'],['en/knowledge-test/','EN']]) {
       await k.nth(t.indexOf(ANTW[v])).click(); await p.locator('#toets button.btn-primary').first().click(); await p.waitForTimeout(30);
     }
   }
-  console.log(naam,'vragen per toets:',totaal,'| verschillende vragen gezien in 12 toetsen:',gezien.size,'van 140');
+  console.log(naam,'vragen per toets:',totaal,'| verschillende vragen gezien in 12 toetsen:',gezien.size,'van 315');
 }
 console.log('errors',errs); await b.close(); })();

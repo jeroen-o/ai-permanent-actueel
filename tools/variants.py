@@ -120,8 +120,8 @@ def to_en(x):
     # toetssectie
     r('>Kwartaaltoets · AI Permanent Actueel<', '>Quarterly test · AI Permanent Actueel<')
     r('>Kennistoets AI-geletterdheid</h1>', '>AI Literacy Knowledge Test</h1>')
-    r('line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van twintig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
-      'line-height:1.55">Two questions per selected module, randomly drawn each time from a bank of twenty per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
+    r('line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van vijfenveertig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
+      'line-height:1.55">Two questions per selected module, randomly drawn each time from a bank of forty-five per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
     r('Oefentoets — geen erkend examen en geen bewijs van naleving.', 'Practice test — not a recognised exam and no proof of compliance.')
     r('\n      <p style="margin:0;font-size:14px"><a href="../../#pakket">Welke modules horen bij mijn rol?</a></p>', '')
     r('>Kies de modules voor deze toets<', '>Choose the modules for this test<')

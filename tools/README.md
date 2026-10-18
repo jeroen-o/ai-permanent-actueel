@@ -18,7 +18,7 @@ Tussenbestanden komen in `tools/.werk/` (niet in git).
 | Wat | Waar |
 |---|---|
 | Klantcommunicatie (verplicht, aanbevolen, intern, modelteksten, aandachtspunten) | `kc_data.py` |
-| Toetsvragen (NL en EN, 20 per module) | `vragen_nl.py`, `vragen_en.py` (via `vragen.py`) |
+| Toetsvragen (NL en EN, 45 per module) | `vragen_nl.py`, `vragen_nl2.py`, `vragen_en.py`, `vragen_en2.py` (via `vragen.py`) |
 | Gratis-blok, tip je collega's, nieuwsbrieven, footer, Let op-tekst | `extras.py` |
 | HOERA-banner en confetti | `feest.py` |
 | Zoeken, scroll-offset, header | `ronde3.py` |

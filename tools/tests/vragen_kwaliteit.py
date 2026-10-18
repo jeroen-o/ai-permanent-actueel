@@ -3,7 +3,7 @@ import os, sys, collections
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 from vragen import NL, EN
 
-def check(naam, lijst, per_module=20):
+def check(naam, lijst, per_module=45):
     fouten = []
     c = collections.Counter(v[0] for v in lijst)
     for m in range(1, 8):

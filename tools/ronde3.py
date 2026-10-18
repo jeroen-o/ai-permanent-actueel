@@ -13,7 +13,7 @@ t = sub1("const reeks = VRAGEN.filter(v=>mods.includes(v.m)).sort((a,b)=>a.m-b.m
 t = sub1("const aantal=VRAGEN.filter(v=>s.mods.includes(v.m)).length;",
          "const aantal=s.mods.reduce((n,m)=>n+Math.min(2,VRAGEN.filter(v=>v.m===m).length),0);", t)
 t = sub1('line-height:1.55">Twee vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>',
-         'line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van twintig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>', t)
+         'line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van vijfenveertig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>', t)
 
 # 2. scroll-offset op basis van de werkelijke headerhoogte
 t = sub1("html{scroll-behavior:smooth}", "html{scroll-behavior:smooth}\n[id]{scroll-margin-top:calc(var(--kop,0px) + 16px)}", t)
