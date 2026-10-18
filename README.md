@@ -16,10 +16,17 @@ AI Permanent Actueel — maandelijkse AI-updates en een kwartaaltoets voor medew
 
 ## Wat werkt er op GitHub Pages
 
-- Werkt: modules, pakket-check, kennistoets + certificaat, prompt-check, kantoorscan, dossier-checklist, veelgestelde vragen.
+- Werkt: modules, pakket-check, kennistoets + certificaat, prompt-check, kantoorscan, dossier-checklist, veelgestelde vragen, tabblad *Klantcommunicatie* (per beroepsgroep), zoekfunctie (ook via `?q=zoekterm`) en Home-knop.
 - Werkt niet zonder koppeling: de **AI-assistent** (en de knop "Leg verder uit met AI"). Die gebruikt nu de ingebouwde AI van de ontwerpomgeving. Voor livegang is een eigen backend nodig (bijv. een serverless functie die de Claude API aanroept met een API-sleutel die niet in de browser staat).
 
 ## Nog in te vullen
 
 - Echte aanmeldlinks voor DFO Signalen en Nieuwsbrief Wft (nu `dfobv.nl`).
 - Controle van de tekst bij "Wat kost het?" en de SLIM-subsidie.
+
+## SEO en GEO
+
+- `index.html` bevat in de `<head>` meta description, canonical, Open Graph/Twitter, favicon en JSON-LD (Organization, WebSite met SearchAction, WebPage, FAQPage).
+- In de body staat een statische tekstversie van de pagina (`<main id="seo-static">`) voor zoekmachines, AI-crawlers en bezoekers zonder JavaScript. Die wordt vervangen zodra de interactieve pagina laadt. **Pas je teksten aan, werk dan ook dit blok en `llms.txt` bij.**
+- `robots.txt` (ook AI-crawlers toegestaan), `sitemap.xml`, `llms.txt` (samenvatting voor AI-assistenten) en `og-image.png` (deelafbeelding 1200×630) staan in de root.
+- Na livegang: dien de sitemap in bij Google Search Console en Bing Webmaster Tools.
