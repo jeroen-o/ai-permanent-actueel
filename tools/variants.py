@@ -3,7 +3,7 @@ D = WERK
 TOETS_URL = SITE + 'kennistoets/'
 TOETS_TITLE = 'Kennistoets AI-geletterdheid | AI Permanent Actueel'
 TOETS_DESC = ('Gratis oefentoets AI-geletterdheid (art. 4 AI-verordening) voor financieel dienstverleners: '
-              'twee vragen per module, uitleg bij elk antwoord en een deelnamebewijs vanaf 70% goed.')
+              'zeven vragen per module, uitleg bij elk antwoord en een deelnamebewijs vanaf 70% goed.')
 ORG = jsonld([])  # bevat Organization + WebSite
 ORG_G = [x for x in json.loads(ORG)['@graph'] if x['@type'] in ('Organization', 'WebSite')]
 TOETS_LD = json.dumps({"@context": "https://schema.org", "@graph": ORG_G + [
@@ -33,11 +33,11 @@ TEASER = f'''<section id="toets" style="border-bottom:2px solid var(--color-divi
     <div style="display:flex;flex-direction:column;gap:var(--space-3)">
       <span style="{LBL}">{lbl} — Kwartaaltoets</span>
       <h2 style="margin:0;font-size:clamp(28px,3.4vw,40px);line-height:1.05;letter-spacing:-0.02em">Kennistoets AI-geletterdheid</h2>
-      <p style="margin:0;font-size:15px;line-height:1.55">Twee vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>
+      <p style="margin:0;font-size:15px;line-height:1.55">Zeven vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.</p>
       <p style="margin:0;font-size:12px;opacity:0.7">Oefentoets — geen erkend examen en geen bewijs van naleving.</p>
     </div>
     <div style="background:var(--color-bg);border:2px solid var(--color-text);padding:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4);grid-column:span 2;min-width:0">
-      <h3 style="margin:0;font-size:20px">7 modules · 2 vragen per module · deelnamebewijs vanaf 70%</h3>
+      <h3 style="margin:0;font-size:20px">7 modules · 7 vragen per module · deelnamebewijs vanaf 70%</h3>
       <p style="margin:0;font-size:15px;line-height:1.55">De toets staat op een eigen pagina. Kies daar zelf de modules, of start vanuit de pakket-check met precies de modules die bij jouw rol horen.</p>
       <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">
         <a class="btn btn-primary" href="kennistoets/" style="justify-content:flex-start;padding:12px 18px;font-size:15px">Naar de kennistoets</a>
@@ -76,7 +76,7 @@ assert 'id="klantcommunicatie"' not in toets and 'href="#' not in toets
 EN_URL = SITE + 'en/knowledge-test/'
 EN_TITLE = 'AI Literacy Knowledge Test | AI Permanent Actueel'
 EN_DESC = ('Free AI literacy practice test (Article 4 EU AI Act) for staff of Dutch financial service providers: '
-           'two questions per module, an explanation for every answer and a certificate of participation from 70%.')
+           'seven questions per module, an explanation for every answer and a certificate of participation from 70%.')
 
 MODULES_EN = [
   (1, "AI basics", "What AI is, how a language model works and what you can and cannot expect from it."),
@@ -120,8 +120,8 @@ def to_en(x):
     # toetssectie
     r('>Kwartaaltoets · AI Permanent Actueel<', '>Quarterly test · AI Permanent Actueel<')
     r('>Kennistoets AI-geletterdheid</h1>', '>AI Literacy Knowledge Test</h1>')
-    r('line-height:1.55">Twee vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van vijfenveertig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
-      'line-height:1.55">Two questions per selected module, randomly drawn each time from a bank of forty-five per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
+    r('line-height:1.55">Zeven vragen per gekozen module, elke keer willekeurig gekozen uit een vragenbank van vijfenveertig per module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',
+      'line-height:1.55">Seven questions per selected module, randomly drawn each time from a bank of forty-five per module, with an explanation for every answer. Score 70% or more to get a certificate of participation for your records. Questions refer to Dutch and EU rules for financial service providers.')
     r('Oefentoets — geen erkend examen en geen bewijs van naleving.', 'Practice test — not a recognised exam and no proof of compliance.')
     r('\n      <p style="margin:0;font-size:14px"><a href="../../#pakket">Welke modules horen bij mijn rol?</a></p>', '')
     r('>Kies de modules voor deze toets<', '>Choose the modules for this test<')

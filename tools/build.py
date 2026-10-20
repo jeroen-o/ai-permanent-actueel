@@ -84,6 +84,12 @@ out = subprocess.run(['node', '-e', 'const vm=require("vm");const c=require("fs"
                       'process.stdout.write(vm.runInNewContext(c+";JSON.stringify({MODULES,FAQ,CHECKLIST})"))'],
                      input=dcjs, capture_output=True, text=True, check=True).stdout
 DC = json.loads(out)
+_OUD = "Ongeveer drie minuten per maandupdate en een kwartier per kwartaaltoets."
+_NIEUW = "Ongeveer drie minuten per maandupdate. De kwartaaltoets telt zeven vragen per gekozen module: reken op ongeveer 5 minuten per module."
+assert _OUD in t
+t = t.replace(_OUD, _NIEUW)
+for _f in DC['FAQ']:
+    _f['a'] = _f['a'].replace(_OUD, _NIEUW)
 FAQ_ALL = DC['FAQ'] + KC_FAQ
 
 t = sub1('<html><head>', '<html lang="nl"><head>', t)
@@ -246,7 +252,7 @@ METHODS = r'''
   zoekBronnen(){
     const items=[], gezien=new Set();
     const voeg=(sectie,titel,tekst,ga)=>{ const sleutel=(titel+'|'+tekst).slice(0,200); if(gezien.has(sleutel)) return; gezien.add(sleutel); items.push({sectie,titel,tekst,ga}); };
-    if(PAGINA==='home') voeg('Kwartaaltoets','Kennistoets AI-geletterdheid','Twee vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',()=>{ window.location.href=TOETSURL; });
+    if(PAGINA==='home') voeg('Kwartaaltoets','Kennistoets AI-geletterdheid','Zeven vragen per gekozen module, met uitleg bij elk antwoord. Vanaf 70% goed krijg je een deelnamebewijs voor je dossier.',()=>{ window.location.href=TOETSURL; });
     FAQ.forEach((f,i)=>voeg('Veelgestelde vragen',f.v,f.a,()=>this.setState({faqOpen:i},()=>this.scrollNaar('faq'))));
     Object.keys(KC.blokken).forEach(b=>KC.blokken[b].forEach(k=>{
       const sector=k.s.includes('alle')?'alle':k.s[0];
